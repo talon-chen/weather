@@ -87,7 +87,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       var typedName = await Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => CityScreen(),
+                          builder: (context) => const CityScreen(),
                         ),
                       );
 

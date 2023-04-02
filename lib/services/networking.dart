@@ -19,7 +19,7 @@ class NetworkHelper {
     if (res.statusCode == 200) {
       return jsonDecode(res.body);
     } else {
-      print(res.statusCode);
+      //
     }
   }
 }
