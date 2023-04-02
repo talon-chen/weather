@@ -119,17 +119,6 @@ class _LocationScreenState extends State<LocationScreen> {
                   ],
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.only(left: 15.0),
-                child: Row(
-                  children: [
-                    Text(
-                      '$weatherDesc',
-                      style: kMessageTextStyle,
-                    ),
-                  ],
-                ),
-              ),
               Padding(
                 padding: const EdgeInsets.only(right: 15.0),
                 child: Text(
