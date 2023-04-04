@@ -104,26 +104,40 @@ class _LocationScreenState extends State<LocationScreen> {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 15.0),
-                child: Row(
+              Expanded(
+                child: Column(
                   children: [
-                    Text(
-                      '$temp°',
-                      style: kTempTextStyle,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            '$temp°',
+                            style: kTempTextStyle,
+                          ),
+                          Text(
+                            '$wIcon',
+                            style: kConditionTextStyle,
+                          ),
+                        ],
+                      ),
                     ),
-                    Text(
-                      '$wIcon',
-                      style: kConditionTextStyle,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15.0),
+                      child: Text(
+                        'The current weather is $weatherDesc',
+                        textAlign: TextAlign.left,
+                        style: kButtonTextStyle,
+                      ),
                     ),
                   ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 15.0),
+                padding: const EdgeInsets.only(left: 15.0),
                 child: Text(
-                  '$wMsg in $city!',
-                  textAlign: TextAlign.right,
+                  '$wMsg $city!',
+                  textAlign: TextAlign.left,
                   style: kMessageTextStyle,
                 ),
               ),
